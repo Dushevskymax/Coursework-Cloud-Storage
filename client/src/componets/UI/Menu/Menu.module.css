@@ -1,0 +1,17 @@
+.menu {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.menu__items {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 50%;
+    border-radius: 20px;
+    background: rgb(47, 45, 47);
+    box-shadow:  0 0 5px 2px rgba(16, 16, 16, 0.5);
+}

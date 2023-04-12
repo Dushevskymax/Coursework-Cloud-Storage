@@ -1,0 +1,8 @@
+.new_folder_name {
+    border-radius: 7px;
+    outline: none;
+    border: 1px;
+    font-size: medium;
+    background-color: rgb(70, 67, 70);
+    color:rgb(138, 143, 143);
+}

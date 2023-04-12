@@ -1,0 +1,49 @@
+
+.fcontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.fname {
+   width: 100%;
+   display: flex;
+   align-items: center;
+}
+
+.fname div{
+    margin-left: 20px;
+}
+
+.fsave {
+    width: 20%;
+    cursor: pointer;
+}
+
+.fremove {
+    width: 10%;
+    cursor: pointer;
+}
+
+.fsize {
+    width: 100%;
+}
+
+.searchedfcontainer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.searchedfname {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.searchedfname div {
+    margin-left: 20px;
+}

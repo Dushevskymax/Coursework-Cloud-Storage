@@ -1,0 +1,8 @@
+.not_in_folder {    
+   opacity: 0.5;
+}
+
+.not_in_folder, .in_folder span {
+    cursor: pointer;
+    width: 0%;
+}

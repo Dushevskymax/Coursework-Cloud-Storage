@@ -1,0 +1,9 @@
+.item_list_block{
+    overflow-y: auto;
+    max-height: 660px;
+}
+
+.item_list_block::-webkit-scrollbar {
+    width: 0px;
+}
+

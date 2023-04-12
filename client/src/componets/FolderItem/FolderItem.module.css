@@ -1,0 +1,44 @@
+.folcontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-left: 7px;
+    margin-top: 10px;
+}
+
+.folname {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.folname div {
+    margin-left: 15px;
+}
+
+.folremove {
+    cursor: pointer;
+    width: 5.3%;
+}
+
+
+.searchedfolcontainer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    padding-left: 7px;
+    margin-top: 10px;
+}
+
+.searchedfolname {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.searchedfolname div {
+    margin-left: 15px;
+}
+
