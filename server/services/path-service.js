@@ -2,22 +2,18 @@ const BASEDIR = process.env.BASEDIR;
 
 class PathService {
 
-    static getPath(reqQuery) {
-        if ('path' in reqQuery) {
-            return reqQuery.path;
-        }
+    getPath(reqQuery) {
+        return reqQuery.path;
     }
 
-    static getFullPath(reqQuery) {
-        if ('path' in reqQuery) {
-            return BASEDIR + reqQuery.path;
-        }
+    getFullPath(reqQuery, userId) {
+        return `${BASEDIR}/${userId}/${reqQuery.path}`;
     }
 
-    static getSourcePath() {
-        return BASEDIR;
+    getSourcePath(userId) {
+        return `${BASEDIR}/${userId}`;
     }
 }
 
 
-module.exports = PathService;
+module.exports = new PathService();

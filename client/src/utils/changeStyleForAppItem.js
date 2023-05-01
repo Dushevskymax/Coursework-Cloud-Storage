@@ -10,7 +10,7 @@ export default class Styler {
     static #DarkTheme(){
         const currentStyles = document.getElementsByTagName('body')[0].style;
         currentStyles.background = 'rgb(33,33,33)';
-        currentStyles.color = 'rgb(52, 179, 241)';
+        currentStyles.color = '#4844ff';
     }
 
     static changeCurrentTheme(currTheme){

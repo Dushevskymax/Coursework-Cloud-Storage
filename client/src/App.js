@@ -1,20 +1,30 @@
 import React, { useEffect, useState } from 'react';
 import './styles/App.css';
-import WorkSpace from './componets/WorkSpace/WorkSpace';
-import changeStyleForAppItem from './utils/changeStyleForAppItem';
+import Login from './pages/Login/Login';
+import Registration from './pages/Registration/Registration';
+import Main from './pages/Main/Main';
+import NotFound from './pages/NotFound/NotFound';
+import { Routes, Route, useNavigate } from 'react-router-dom';
+import { AuthorizationContext } from './contexts/auth-context';
 
 function App() {
 
-  const [theme, setTheme] = useState(true);
-
-  useEffect(() =>{
-    changeStyleForAppItem.changeCurrentTheme(theme);
-  },[theme])
+  const navigate = useNavigate();
+  const [userData, setUserData] = useState({ id: '', email: '', nickname: '' });
 
   return (
-    <div>
-      <WorkSpace theme={theme} changeTheme={setTheme}/>
-    </div>
+    <AuthorizationContext.Provider value={{
+      nav: navigate,
+      setUserData: setUserData,
+      userData: userData
+    }}>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/registration" element={<Registration />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </AuthorizationContext.Provider>
   );
 }
 
